@@ -1,0 +1,75 @@
+env: 
+  browser: true
+  es2021: true
+  node: true
+extends: 
+  - "eslint:recommended"
+  - "plugin:react/recommended"
+  - next
+  - next/core-web-vitals
+parserOptions: 
+  ecmaFeatures: 
+    jsx: true
+  ecmaVersion: 12
+  emitWarning: true
+  sourceType: module
+rules: 
+  array-bracket-spacing: 
+    - error
+    - always
+    - arraysInArrays: false
+      objectsInArrays: true
+      singleValue: false
+  comma-dangle: 
+    - error
+    - always-multiline
+  eol-last: 
+    - error
+    - always
+  indent: 
+    - warn
+    - 2
+  jsx-quotes: 
+    - error
+    - prefer-single
+  key-spacing: 
+    - error
+    - afterColon: true
+      beforeColon: false
+      mode: minimum
+  linebreak-style: 
+    - error
+    - unix
+  multiline-comment-style: 
+    - error
+    - separate-lines
+  no-unused-vars: 
+    - warn
+  object-curly-spacing: 
+    - error
+    - always
+    - arraysInObjects: true
+      objectsInObjects: false
+  quotes: 
+    - warn
+    - single
+  react/display-name: 
+    - warn
+  react-hooks/exhaustive-deps: 
+    - warn
+  react-hooks/rules-of-hooks: 
+    - error
+  react/jsx-filename-extension: 
+    - 1
+    - extensions: 
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+  react/prop-types: off
+  react/react-in-jsx-scope: off
+  semi: 
+    - warn
+    - always
+  space-infix-ops: 
+    - error
